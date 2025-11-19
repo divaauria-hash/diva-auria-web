@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicoding Story App</title>
+    <meta name="description" content="Aplikasi berbagi cerita Dicoding dengan peta interaktif">
+    <meta name="theme-color" content="#9262b3">
+    <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+    <link rel="icon" href="/icons/icon-192.png">
+    <link rel="apple-touch-icon" href="/icons/icon-192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Story App">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Skip to Content</a>
+    
+    <header class="header">
+        <nav class="navbar">
+            <div class="brand">
+                <h1>Dicoding Story</h1>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link home-link" style="display:none;">Home</a></li>
+                <li><a href="#add-story" class="nav-link add-story-link" style="display:none;">Add Story</a></li>
+                <li><a href="#login" class="nav-link auth-link">Login</a></li>
+                <li><a href="#register" class="nav-link auth-link">Register</a></li>
+                <li><button class="nav-link logout-btn" style="display:none;">Logout</button></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <main id="main-content" class="main-content">
+        <div id="app"></div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Dicoding Story - Diva Auria</p>
+    </footer>
+</body>
+</html>
